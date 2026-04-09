@@ -1,0 +1,5 @@
+ads1256_publisher:
+  ros__parameters:
+    endpoint: ads1256
+    publish_rate: 10.0
+    frame_id: ads1256
