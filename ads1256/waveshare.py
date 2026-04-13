@@ -4,7 +4,7 @@ from typing import Dict, Optional
 from pipyadc import ADS1256
 from pipyadc.ADS1256_definitions import DRATE_10, NEG_AIN1, NEG_AIN3, NEG_AINCOM, POS_AIN0, POS_AIN2, POS_AIN4
 
-from . import waveshare_config
+from src.ads1256.ads1256 import waveshare_config
 from .converters import lm335_kelvin_direct
 
 logging.basicConfig(level=logging.INFO)

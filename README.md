@@ -1,12 +1,13 @@
-# ads1256 ROS 2 port
+# ads1256 (ROS 2)
 
-This bundle contains a ROS 2 refactor of the original ROS 1 `ads1256` package plus the `msgs` interface package it depends on.
+## External dependencies
+This ROS 2 package still expects the target system to provide the hardware-related Python dependencies used by the original project:
+- `pipyadc`
+- `pigpio`
 
-## Packages
-- `msgs`: ROS 2 interface package with `Ads.msg` and `E720.msg`
-- `ads1256`: ROS 2 `ament_python` package wrapping the ADS1256 reader and publisher node
+It also expects the Raspberry Pi SPI/GPIO wiring used by the Waveshare ADS1256 board.
 
-## Notes
-- The ROS node was migrated from `rospy` to `rclpy`.
-- The original XML launch file was replaced with a ROS 2 Python launch file.
-- External hardware dependencies such as `pipyadc`, `pigpio`, and Raspberry Pi SPI/GPIO setup are still required on the target system.
+## Run
+```bash
+ros2 launch ads1256 ads1256.launch.py
+```
