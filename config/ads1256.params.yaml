@@ -3,3 +3,5 @@ ads1256_publisher:
     endpoint: ads1256
     publish_rate: 10.0
     frame_id: ads1256
+    simulate: false
+    fallback_to_simulation: true
