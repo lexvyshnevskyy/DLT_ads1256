@@ -19,7 +19,6 @@ setup(
     maintainer_email='lex.vyshnevskyy@gmail.com',
     description='ROS 2 ADS1256 publisher node for Raspberry Pi / Waveshare hardware.',
     license='TODO',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'ads1256_node = ads1256.node:main',
