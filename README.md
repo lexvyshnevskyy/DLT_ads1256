@@ -1,13 +1,7 @@
-# ads1256 (ROS 2)
+# ads1256
 
-## External dependencies
-This ROS 2 package still expects the target system to provide the hardware-related Python dependencies used by the original project:
-- `pipyadc`
-- `pigpio`
+Optional ADS1256 ADC ROS node (enable only when hardware is present).
 
-It also expects the Raspberry Pi SPI/GPIO wiring used by the Waveshare ADS1256 board.
+**Full documentation:** [docs/en/hardware.md](../../docs/en/hardware.md) · [docs/uk/hardware.md](../../docs/uk/hardware.md)
 
-## Run
-```bash
-ros2 launch ads1256 ads1256.launch.py
-```
+Service: `delatometry-ads1256.service`
